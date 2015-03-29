@@ -31,6 +31,7 @@
             this.btnExeNoQuery = new System.Windows.Forms.Button();
             this.btnExeScalar = new System.Windows.Forms.Button();
             this.btnExeReader = new System.Windows.Forms.Button();
+            this.btnExeDataTable = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExeNoQuery
@@ -59,15 +60,26 @@
             this.btnExeReader.Name = "btnExeReader";
             this.btnExeReader.Size = new System.Drawing.Size(154, 23);
             this.btnExeReader.TabIndex = 2;
-            this.btnExeReader.Text = "ExecuteReader";
+            this.btnExeReader.Text = "ExecuteReader //Wrong Method";
             this.btnExeReader.UseVisualStyleBackColor = true;
             this.btnExeReader.Click += new System.EventHandler(this.btnExeReader_Click);
+            // 
+            // btnExeDataTable
+            // 
+            this.btnExeDataTable.Location = new System.Drawing.Point(47, 188);
+            this.btnExeDataTable.Name = "btnExeDataTable";
+            this.btnExeDataTable.Size = new System.Drawing.Size(154, 23);
+            this.btnExeDataTable.TabIndex = 3;
+            this.btnExeDataTable.Text = "ExecuteDataTable";
+            this.btnExeDataTable.UseVisualStyleBackColor = true;
+            this.btnExeDataTable.Click += new System.EventHandler(this.btnExeDataTable_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnExeDataTable);
             this.Controls.Add(this.btnExeReader);
             this.Controls.Add(this.btnExeScalar);
             this.Controls.Add(this.btnExeNoQuery);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button btnExeNoQuery;
         private System.Windows.Forms.Button btnExeScalar;
         private System.Windows.Forms.Button btnExeReader;
+        private System.Windows.Forms.Button btnExeDataTable;
     }
 }
 
